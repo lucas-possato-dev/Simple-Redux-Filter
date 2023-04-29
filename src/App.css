@@ -1,38 +1,87 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+table,
+input, 
+label {
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+td {
+  padding: 0.3rem;
+}
+
+th {
+  padding-right: 1rem;
+  text-align: left;
+}
+
+
+tr:nth-child(even) {
+  background: #8a3131;
+}
+
+tr:nth-child(odd) {
+  background: #5e0f0f;
+}
+
+input[type='number'] {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+  background: #EB5757;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  background: #8a3131;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 10px 10px 0 0;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin-left: 15px;
+}
+
+.tableContainer
+
+.tableBody,
+.tableHead {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tableHead {
+  background: #8a3131;
+  color: #070000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tableBody {
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.trClass {
+  color: rgb(221, 209, 209);
+  text-align: center;
+  font-size: 1rem;
 }
