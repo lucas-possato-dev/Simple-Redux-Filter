@@ -19,11 +19,11 @@ th {
 
 
 tr:nth-child(even) {
-  background: #8a3131;
+  background: rgba(9,103,121,0.48783263305322133);
 }
 
 tr:nth-child(odd) {
-  background: #5e0f0f;
+  background: rgba(3, 77, 92, 0.488);
 }
 
 input[type='number'] {
@@ -39,9 +39,8 @@ body {
   width: 100%;
   padding: 20px;
   height: 100vh;
-  background: #EB5757;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(9,103,121);
+  background: linear-gradient(90deg, rgba(9,103,121,0.48783263305322133) 0%, rgb(30, 85, 97) 0%, rgba(2,2,9,1) 100%, rgba(2,0,36,1) 100%);
   box-sizing: border-box;
   margin: 0;
 }
@@ -50,9 +49,9 @@ body {
   display: grid;
   justify-content: center;
   padding: 20px;
-  background: #8a3131;
+  background: rgba(3, 71, 85, 0.488);
   box-sizing: border-box;
-  border: 1px solid #000000;
+  border: 1px solid rgba(2,2,9,.2);
   border-radius: 10px 10px 0 0;
 }
 
@@ -72,8 +71,8 @@ body {
 }
 
 .tableHead {
-  background: #8a3131;
-  color: #070000;
+  background: rgba(9,103,121,0.48783263305322133);
+  color: rgba(7, 33, 37, 0.488);
 }
 
 .tableBody {
@@ -81,7 +80,7 @@ body {
 }
 
 .trClass {
-  color: rgb(221, 209, 209);
+  color: white;
   text-align: center;
   font-size: 1rem;
 }

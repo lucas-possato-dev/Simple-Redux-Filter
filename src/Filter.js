@@ -47,14 +47,14 @@ function handleChecked(color) {
       type="number"
       value={minPrice}
       placeholder='Min'
-      onChange={({target}) => setMinPrice(target.value)} />
+      onChange={({target}) => setMinPrice(target.value <= 60 ? target.value : 0)} />
 
       <input 
       type="number"
       className='input'
       value={maxPrice}
       placeholder='Max'
-      onChange={({target}) => setMaxPrice(target.value)} />
+      onChange={({target}) => setMaxPrice(target.value <= 60 ? target.value : 0)} />
       {colors.map((color) => (
         <label key={color} className='checkbox'>
         <input className='input' type="checkbox"
